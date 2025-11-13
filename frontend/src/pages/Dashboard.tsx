@@ -22,7 +22,10 @@ import {
   ArrowRight,
   Download,
   Filter,
-  Search
+  Search,
+  DollarSign,
+  Shield,
+  Share2
 } from 'lucide-react';
 
 const Dashboard = () => {
@@ -122,6 +125,27 @@ const Dashboard = () => {
       desc: t('dashboard.tourismDesc'),
       color: 'from-cyan-600 to-cyan-800',
       route: '/tourism',
+    },
+    {
+      icon: DollarSign,
+      title: 'Sales & Expense Tracker',
+      desc: 'Track daily sales, expenses & profit',
+      color: 'from-green-600 to-green-800',
+      route: '/sales-tracker',
+    },
+    {
+      icon: Shield,
+      title: 'Licensing Assistance',
+      desc: 'Get licenses & government schemes',
+      color: 'from-blue-600 to-blue-800',
+      route: '/licensing-assistance',
+    },
+    {
+      icon: Share2,
+      title: 'Digital Presence',
+      desc: 'Boost online visibility & marketing',
+      color: 'from-pink-600 to-pink-800',
+      route: '/digital-presence',
     },
   ];
 
