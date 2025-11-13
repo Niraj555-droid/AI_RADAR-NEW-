@@ -18,6 +18,9 @@ import Offers from "./pages/Offers";
 import ChefGuru from "./pages/ChefGuru";
 import Settings from "./pages/Settings";
 import Notifications from "./pages/Notifications";
+import SalesTracker from "./pages/SalesTracker";
+import LicensingAssistance from "./pages/LicensingAssistance";
+import DigitalPresence from "./pages/DigitalPresence";
 
 const queryClient = new QueryClient();
 
@@ -43,6 +46,9 @@ const App = () => (
             <Route path="/chef-guru" element={<ChefGuru />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/notifications" element={<Notifications />} />
+            <Route path="/sales-tracker" element={<SalesTracker />} />
+            <Route path="/licensing-assistance" element={<LicensingAssistance />} />
+            <Route path="/digital-presence" element={<DigitalPresence />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
